@@ -42,7 +42,15 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
-
+        /*
+        * ************  Steps For Google Map  ***********
+        * Step1: Create a google map activity.
+        * Step 2: Create or Generate an api key by clicking a link in manifest and
+        * Step 3: Add api key in your project
+        * Step 4: Now find out the latitude and longitude of your area
+        * Step 5: Add toh below LatLng method and also change marker title
+        * Step 6: Launch an activity
+        * */
         // Add a marker in Sydney and move the camera
         LatLng sydney = new LatLng(32.772542798644274, 74.18599707746178);
         mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Bhouch"));
